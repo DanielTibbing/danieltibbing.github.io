@@ -25,10 +25,12 @@ export default function App() {
       <header className="suite-header">
         <div className="suite-switcher-bar">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 suite-switcher-content">
-            <div className="suite-logo">
-              <div className="suite-logo-icon"></div>
+            <a 
+              href="https://danieltibbing.github.io/" 
+              className="suite-logo"
+            >
               <span>China Suite</span>
-            </div>
+            </a>
             <div className="suite-links">
               <a 
                 href="https://danieltibbing.github.io/china-jobs" 

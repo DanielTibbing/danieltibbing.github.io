@@ -11,8 +11,8 @@
 }
 
 .suite-switcher-bar {
-  background: rgba(243, 244, 246, 0.7); /* gray-100 slim */
-  border-bottom: 1px solid rgba(229, 231, 235, 0.8);
+  background: var(--bg); /* solid matching background */
+  border-bottom: 1px solid var(--border);
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--muted);
@@ -21,8 +21,8 @@
 }
 
 html.dark .suite-switcher-bar {
-  background: rgba(2, 6, 23, 0.75); /* slate-950 slim */
-  border-bottom: 1px solid rgba(30, 41, 59, 0.8);
+  background: var(--bg); /* solid matching slate-955 background */
+  border-bottom: 1px solid var(--border);
 }
 
 .suite-switcher-content {
@@ -35,11 +35,14 @@ html.dark .suite-switcher-bar {
   font-weight: 800;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  font-size: 0.65rem;
-  color: var(--text);
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
+  font-size: 10px;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+
+.suite-logo:hover {
+  color: var(--brand);
 }
 
 .suite-logo-icon {
@@ -62,12 +65,15 @@ html.dark .suite-switcher-bar {
 }
 
 .suite-link-inactive {
-  padding-bottom: 0.125rem;
-  transition: color 150ms ease;
+  text-decoration: none;
+  color: var(--muted);
+  transition: color 200ms ease;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
 }
 
 .suite-link-inactive:hover {
-  color: var(--brand);
+  color: var(--text);
 }
 
 /* Main Navigation Row */
