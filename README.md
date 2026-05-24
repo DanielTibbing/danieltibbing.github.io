@@ -60,4 +60,4 @@ src/
    ```bash
    npm run build
    ```
-   *This compiles TypeScript strict checking (`tsc -b`) and bundles standard minified files inside `dist/` using Vite.*
+   *This compiles TypeScript strict checking (`tsc -b`) and bundles standard minified files inside `dist/` using Vite*
