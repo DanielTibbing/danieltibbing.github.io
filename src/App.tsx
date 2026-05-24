@@ -8,7 +8,8 @@ import {
   Moon, 
   ShieldCheck, 
   Compass, 
-  Zap 
+  Zap,
+  Headphones
 } from "lucide-react";
 import "./App.css";
 
@@ -37,6 +38,12 @@ export default function App() {
                 className="suite-link-inactive"
               >
                 Jobs Board
+              </a>
+              <a 
+                href="https://danieltibbing.github.io/china-pods" 
+                className="suite-link-inactive"
+              >
+                Podcast Hub
               </a>
               <a 
                 href="https://danieltibbing.github.io/chinese-practice/" 
@@ -160,6 +167,44 @@ export default function App() {
             <ArrowUpRight className="h-5 w-5 launch-btn-arrow" />
           </a>
         </article>
+
+        {/* Podcast Hub Card */}
+        <article className="hub-card">
+          <div className="card-badge-row">
+            <div className="card-icon-container">
+              <Headphones className="h-7 w-7" />
+            </div>
+            <span className="card-badge">Audio & Culture</span>
+          </div>
+
+          <h3>China Podcast Hub</h3>
+          <p className="card-desc">
+            Stream, search, and catalog high-impact podcasts covering China's politics, technology, history, and society. Features inline audio playback, playback speeds, and a listening queue.
+          </p>
+
+          <ul className="card-checklist">
+            <li className="checklist-item">
+              <CheckCircle2 className="h-4.5 w-4.5 checklist-icon" />
+              <span>Premium glassmorphic continuous audio player</span>
+            </li>
+            <li className="checklist-item">
+              <CheckCircle2 className="h-4.5 w-4.5 checklist-icon" />
+              <span>Topic-based categorization and quick filters</span>
+            </li>
+            <li className="checklist-item">
+              <CheckCircle2 className="h-4.5 w-4.5 checklist-icon" />
+              <span>Personal playback queue and listening history</span>
+            </li>
+          </ul>
+
+          <a 
+            href="https://danieltibbing.github.io/china-pods" 
+            className="launch-btn"
+          >
+            <span>Launch Podcast Hub</span>
+            <ArrowUpRight className="h-5 w-5 launch-btn-arrow" />
+          </a>
+        </article>
       </main>
 
       {/* Integration Showcase / Specs Grid */}
@@ -207,11 +252,15 @@ export default function App() {
           <div className="footer-stats">
             <div className="footer-stat-item">
               <span className="footer-stat-icon"></span>
-              <span>Jobs Integration: Active</span>
+              <span>Jobs Board: Active</span>
             </div>
             <div className="footer-stat-item">
               <span className="footer-stat-icon"></span>
-              <span>Language Study: Active</span>
+              <span>Podcast Hub: Active</span>
+            </div>
+            <div className="footer-stat-item">
+              <span className="footer-stat-icon"></span>
+              <span>Language Studio: Active</span>
             </div>
           </div>
           <div>
