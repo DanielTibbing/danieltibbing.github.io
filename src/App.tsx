@@ -9,7 +9,8 @@ import {
   ShieldCheck, 
   Compass, 
   Zap,
-  Headphones
+  Headphones,
+  Newspaper
 } from "lucide-react";
 import "./App.css";
 
@@ -56,6 +57,12 @@ export default function App() {
                 className="suite-link-inactive"
               >
                 Reader Feed
+              </a>
+              <a 
+                href="https://danieltibbing.github.io/china-news" 
+                className="suite-link-inactive"
+              >
+                News Aggregator
               </a>
             </div>
           </div>
@@ -249,6 +256,44 @@ export default function App() {
             <ArrowUpRight className="h-5 w-5 launch-btn-arrow" />
           </a>
         </article>
+
+        {/* China News Aggregator Card */}
+        <article className="hub-card">
+          <div className="card-badge-row">
+            <div className="card-icon-container">
+              <Newspaper className="h-7 w-7" />
+            </div>
+            <span className="card-badge bg-indigo-50 border-indigo-200 text-indigo-600 dark:bg-indigo-950/20 dark:text-indigo-400 dark:border-indigo-900/30">News & Stance</span>
+          </div>
+
+          <h3>China News Aggregator</h3>
+          <p className="card-desc">
+            Monitor international coverage on China across multiple global perspectives. Filter stories by stance groups, public and independent channels, languages, and compare narratives side-by-side.
+          </p>
+
+          <ul className="card-checklist">
+            <li className="checklist-item">
+              <CheckCircle2 className="h-4.5 w-4.5 checklist-icon" />
+              <span>Multi-angle perspective classifications & filtering</span>
+            </li>
+            <li className="checklist-item">
+              <CheckCircle2 className="h-4.5 w-4.5 checklist-icon" />
+              <span>Side-by-side parallel coverage comparison engine</span>
+            </li>
+            <li className="checklist-item">
+              <CheckCircle2 className="h-4.5 w-4.5 checklist-icon" />
+              <span>Integrated Singaporean, Swedish, Chinese and Western outlets</span>
+            </li>
+          </ul>
+
+          <a 
+            href="https://danieltibbing.github.io/china-news" 
+            className="launch-btn"
+          >
+            <span>Launch News Aggregator</span>
+            <ArrowUpRight className="h-5 w-5 launch-btn-arrow" />
+          </a>
+        </article>
       </main>
 
       {/* Integration Showcase / Specs Grid */}
@@ -309,6 +354,10 @@ export default function App() {
             <div className="footer-stat-item">
               <span className="footer-stat-icon"></span>
               <span>Reader Feed: Active</span>
+            </div>
+            <div className="footer-stat-item">
+              <span className="footer-stat-icon"></span>
+              <span>News Aggregator: Active</span>
             </div>
           </div>
           <div>
