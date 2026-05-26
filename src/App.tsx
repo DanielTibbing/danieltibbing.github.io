@@ -51,6 +51,12 @@ export default function App() {
               >
                 Language Study
               </a>
+              <a 
+                href="https://danieltibbing.github.io/china-reader" 
+                className="suite-link-inactive"
+              >
+                Reader Feed
+              </a>
             </div>
           </div>
         </div>
@@ -205,6 +211,44 @@ export default function App() {
             <ArrowUpRight className="h-5 w-5 launch-btn-arrow" />
           </a>
         </article>
+
+        {/* China Reader Feed Card */}
+        <article className="hub-card">
+          <div className="card-badge-row">
+            <div className="card-icon-container">
+              <BookOpen className="h-7 w-7 text-indigo-500" />
+            </div>
+            <span className="card-badge">News & Policy</span>
+          </div>
+
+          <h3>China Reader Feed</h3>
+          <p className="card-desc">
+            Aggregated articles, newsletters, and policy briefs covering China's geopolitics, technology, and macroeconomics. Features clean long-form typography and interactive click-lookup translation tools.
+          </p>
+
+          <ul className="card-checklist">
+            <li className="checklist-item">
+              <CheckCircle2 className="h-4.5 w-4.5 checklist-icon text-indigo-500" />
+              <span>Automated build-time scraper pulling newsletter feeds daily</span>
+            </li>
+            <li className="checklist-item">
+              <CheckCircle2 className="h-4.5 w-4.5 checklist-icon text-indigo-500" />
+              <span>Warm Sepia and Slate Dark styled immersive reader canvas</span>
+            </li>
+            <li className="checklist-item">
+              <CheckCircle2 className="h-4.5 w-4.5 checklist-icon text-indigo-500" />
+              <span>Interactive click-lookup CC-CEDICT Chinese dictionary integration</span>
+            </li>
+          </ul>
+
+          <a 
+            href="https://danieltibbing.github.io/china-reader" 
+            className="launch-btn"
+          >
+            <span>Launch Reader Feed</span>
+            <ArrowUpRight className="h-5 w-5 launch-btn-arrow" />
+          </a>
+        </article>
       </main>
 
       {/* Integration Showcase / Specs Grid */}
@@ -261,6 +305,10 @@ export default function App() {
             <div className="footer-stat-item">
               <span className="footer-stat-icon"></span>
               <span>Language Studio: Active</span>
+            </div>
+            <div className="footer-stat-item">
+              <span className="footer-stat-icon"></span>
+              <span>Reader Feed: Active</span>
             </div>
           </div>
           <div>
