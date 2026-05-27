@@ -12,6 +12,7 @@ import {
   Headphones,
   Newspaper
 } from "lucide-react";
+import { SuiteSwitcher } from "china-common";
 import "./App.css";
 
 export default function App() {
@@ -25,48 +26,7 @@ export default function App() {
 
       {/* Global Suite Header */}
       <header className="suite-header">
-        <div className="suite-switcher-bar">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 suite-switcher-content">
-            <a 
-              href="https://danieltibbing.github.io/" 
-              className="suite-logo"
-            >
-              <span>China Suite</span>
-            </a>
-            <div className="suite-links">
-              <a 
-                href="https://danieltibbing.github.io/china-jobs" 
-                className="suite-link-inactive"
-              >
-                Jobs Board
-              </a>
-              <a 
-                href="https://danieltibbing.github.io/china-pods" 
-                className="suite-link-inactive"
-              >
-                Podcast Hub
-              </a>
-              <a 
-                href="https://danieltibbing.github.io/chinese-practice/" 
-                className="suite-link-inactive"
-              >
-                Language Study
-              </a>
-              <a 
-                href="https://danieltibbing.github.io/china-reader" 
-                className="suite-link-inactive"
-              >
-                Reader Feed
-              </a>
-              <a 
-                href="https://danieltibbing.github.io/china-news" 
-                className="suite-link-inactive"
-              >
-                News Aggregator
-              </a>
-            </div>
-          </div>
-        </div>
+        <SuiteSwitcher />
 
         {/* Brand Bar */}
         <div className="header-main">

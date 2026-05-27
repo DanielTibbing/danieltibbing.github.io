@@ -10,61 +10,45 @@
   transition: background-color 300ms ease, border-color 300ms ease;
 }
 
-.suite-switcher-bar {
-  background: var(--bg); /* solid matching background */
+/* Global Nav Switcher */
+.global-nav {
+  background-color: var(--bg);
   border-bottom: 1px solid var(--border);
+  padding: 8px 0;
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--muted);
-  padding: 0.5rem 0;
   transition: background-color 300ms ease, border-color 300ms ease;
 }
 
-html.dark .suite-switcher-bar {
-  background: var(--bg); /* solid matching slate-955 background */
-  border-bottom: 1px solid var(--border);
-}
-
-.suite-switcher-content {
+.global-nav-container {
+  max-width: 64rem;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.suite-logo {
-  font-weight: 800;
-  letter-spacing: 0.05em;
+.global-nav-brand {
   text-transform: uppercase;
-  font-size: 10px;
+  letter-spacing: 0.05em;
+  font-weight: 800;
   color: var(--muted);
+  font-size: 10px;
   text-decoration: none;
   transition: color 200ms ease;
 }
 
-.suite-logo:hover {
+.global-nav-brand:hover {
   color: var(--brand);
 }
 
-.suite-logo-icon {
-  width: 12px;
-  height: 12px;
-  background: var(--brand);
-  border-radius: 3px;
-}
-
-.suite-links {
+.global-nav-links {
   display: flex;
-  gap: 1rem;
+  gap: 16px;
 }
 
-.suite-link-active {
-  color: var(--brand);
-  font-weight: 700;
-  border-bottom: 2px solid var(--brand);
-  padding-bottom: 0.125rem;
-}
-
-.suite-link-inactive {
+.global-nav-link {
   text-decoration: none;
   color: var(--muted);
   transition: color 200ms ease;
@@ -72,8 +56,14 @@ html.dark .suite-switcher-bar {
   padding-bottom: 2px;
 }
 
-.suite-link-inactive:hover {
+.global-nav-link:hover {
   color: var(--text);
+}
+
+.global-nav-link.is-active {
+  color: var(--brand);
+  border-bottom-color: var(--brand);
+  font-weight: 900;
 }
 
 /* Main Navigation Row */
