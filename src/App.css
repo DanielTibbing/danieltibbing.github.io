@@ -12,7 +12,7 @@
 
 /* Global Nav Switcher */
 .global-nav {
-  background-color: var(--bg);
+  background-color: #f9fafb;
   border-bottom: 1px solid var(--border);
   padding: 8px 0;
   font-size: 0.75rem;
@@ -21,12 +21,31 @@
   transition: background-color 300ms ease, border-color 300ms ease;
 }
 
+html.dark .global-nav {
+  background-color: #020617;
+}
+
 .global-nav-container {
   max-width: 64rem;
   margin: 0 auto;
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (min-width: 640px) {
+  .global-nav-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .global-nav-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 .global-nav-brand {
@@ -40,7 +59,11 @@
 }
 
 .global-nav-brand:hover {
-  color: var(--brand);
+  color: #4f46e5;
+}
+
+html.dark .global-nav-brand:hover {
+  color: #818cf8;
 }
 
 .global-nav-links {
@@ -61,9 +84,14 @@
 }
 
 .global-nav-link.is-active {
-  color: var(--brand);
-  border-bottom-color: var(--brand);
+  color: #4f46e5;
+  border-bottom-color: #4f46e5;
   font-weight: 900;
+}
+
+html.dark .global-nav-link.is-active {
+  color: #818cf8;
+  border-bottom-color: #818cf8;
 }
 
 /* Main Navigation Row */
